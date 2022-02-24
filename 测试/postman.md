@@ -120,7 +120,7 @@ pm.test("校验响应头是否包含某头部信息(key)", function () {
    371e78e1c2d2eeabb361294723857e8d,深圳,ffe950dd3e85ee36de34b33575d1e177,15348319215
    ```
 
-   注意文件格式，第一行位变量名称，需要跟接口中的变量名保持一致，如：
+   注意文件格式，第一行为变量名称，需要跟接口中的变量名保持一致，如：
 
    ```js
    http://apis.juhe.cn/mobile/get?key={{phonekey}}&phone={{phone}}
