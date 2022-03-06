@@ -155,3 +155,64 @@ XZ,789
 - 遇到文件结束符停止线程?:True
 - 线程共享模式:所有现场
 
+### 五、正则表达式
+
+引用名称:请求要引用的变量名称，如填写num，则可用${num}引用它。
+
+- 正则表达式:匹配需要的内容。
+- 模板：用$num$引用起来，如果在正则表达式中有多个匹配数据，num表示匹配到的第几个值给变量。如：$1$表示匹配到的第1 个值存储在变量中。
+- 匹配数字：0代表随机取值，1代表全部取值，
+- 缺省值：如果参数没有取得到值，那默认给一个值让它取。
+
+
+
+- ()括起来的部分就是要提取的
+- .匹配任何字符串
+- +—次或多次
+- ?在找到第一个匹配项后停止
+
+
+
+### 六、循环控制器
+
+右击添加-逻辑控制器-如果(if)控制器
+
+未勾选Interpret Condition as Variable Expression?
+
+"${methods}"=="GET"
+
+勾选了Interpret Condition as Variable Expression?
+
+${__groovy("${methods}"=="GET",)}
+
+后者性能更优
+
+### 七、HTML报告
+
+进入jmeter目录bin目录
+
+jmeter -n -t httpbin_test.jmx -l httpbin.jtl -e -o C:\Users\Shuqing\Desktop\report
+
+-n：无图形界面
+-t ：测试脚本
+-l：测试数据
+-e：完成脚本执行后生成测试报告
+-o：测试报告存放位置
+
+### 八、搭建平台
+
+**Ant**配置
+
+下载地址：https://ant.apache.org/bindownload.cgi
+
+**环境变量配置：**
+
+ANT_HOME	安装路径，E:\software\apache-ant-1.10.12
+
+Path	%ANT_HOME%\bin
+
+CLASSPATH	%ANT_HOME%\lib
+
+**Jenkins**
+
+下载地址：https://www.jenkins.io/download/
