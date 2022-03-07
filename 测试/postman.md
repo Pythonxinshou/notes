@@ -10,7 +10,7 @@ http://apis.juhe.cn/simpleWeather/query
 
 {"city":"南京","key":"371e78e1c2d2eeabb361294723857e8d"}
 
-**一、断言常见方法**
+### 一、断言常见方法
 
 进入**Tests**的Tab页里可以通过SNIPPETS下方点击快捷添加断言代码
 
@@ -67,7 +67,7 @@ pm.test("校验响应头是否包含某头部信息(key)", function () {
 });
 ```
 
-**二、设置变量**	
+### 二、设置变量
 
 进入**Pre-request Script**的Tab页
 
@@ -128,7 +128,7 @@ pm.test("校验响应头是否包含某头部信息(key)", function () {
 
    导入文件后，可能会提示无法识别数据格式，手动选择text/csv或其它对应的格式，可点击Preview预览文件数据与变量是否对应且正确，最后点击Run Data开始执行文件
 
-**三、关联接口**
+### 三、关联接口
 
 一个接口的结果作为另一个接口的入参
 
